@@ -22,19 +22,20 @@ loansData = pd.read_csv('loansData.csv')
 loansData.dropna(inplace=True)
 
 loansData.boxplot(column='Amount.Requested')
+plt.savefig("AmountRequestedBoxplot.png")
 plt.show()
-plt.savefig("Amount.Requested.boxplot.png")
+
 
 plt.figure()
 loansData.hist(column='Amount.Requested')
+
+plt.savefig("AmountRequestedHistogram.png")
 plt.show()
-plt.savefig("Amount.Requested.histogram.png")
 
 plt.figure()
 graph = stats.probplot(loansData['Amount.Requested'], dist="norm", plot=plt)
+plt.savefig("AmountRequestedQQPlot.png")
 plt.show()
-plt.savefig("Amount.Requested.qqplot.png")
-
 
 
 
