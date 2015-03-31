@@ -28,7 +28,6 @@ plt.show()
 
 plt.figure()
 loansData.hist(column='Amount.Requested')
-
 plt.savefig("AmountRequestedHistogram.png")
 plt.show()
 
