@@ -11,3 +11,4 @@ loansData['FICO.Score'] = loansData['FICO.Range'].map(lambda x : int(x.split("-"
 
 #create the scatter matrix
 a = pd.scatter_matrix(loansData, alpha=0.05, figsize=(10,10))
+
